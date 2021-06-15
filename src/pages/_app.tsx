@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@material-ui/core';
 import Head from 'next/head';
 
+import Header from 'ui/components/surfaces/Header/Header'
 import theme from 'ui/themes/theme';
 import '@styles/globals.css';
 
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
                 />
             </Head>
             <ThemeProvider theme={theme}>
+                <Header />
                 <Component {...pageProps} />
             </ThemeProvider>
         </>

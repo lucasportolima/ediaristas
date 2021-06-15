@@ -1,8 +1,6 @@
-import Head from "next/head";
-import Image from "next/image";
-
 import Safe from "ui/components/feedback/Safe/Safe";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
+import UserInformation from "ui/components/data-display/UserInformation/UserInformation"
 
 export default function Home() {
   return (
@@ -14,6 +12,8 @@ export default function Home() {
           "Preencha seu endereço e veja todos os profissionais da sua localidade"
         }
       />
+
+      <UserInformation name={'Akira Hanashiro'} picture={'https://github.com/hanashiro.png'} rating={3} description={'São Paulo'} />
     </div>
   );
 }
